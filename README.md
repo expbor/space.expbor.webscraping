@@ -3,7 +3,7 @@
 ## Description
 This script scrapes the website www.freelancermap.de  
 
-Starting from th start url:
+Starting from the start url:
 ![grafik](https://github.com/user-attachments/assets/486527ec-7a8c-42b9-9022-f1591f9b0c6f)
 
 the next Button isused until the end is reached.
