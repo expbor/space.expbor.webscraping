@@ -12,9 +12,9 @@ the next Button is used until the end is reached.
 Results are written to ./Data.json
 
 #Run the App
-start_url
-user
-password
+- start_url
+- user
+- password
 
 #License
 This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the LICENSE file.
