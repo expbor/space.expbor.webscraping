@@ -1,5 +1,9 @@
 # Webscraper for www.freelancermap.de
 
+## Description
+This script scrapes the website www.freelancermap.de  
+
+#Run the App
 input variables:
 start_url
 user
@@ -13,6 +17,8 @@ the next Button isused until the end is reached.
 
 Results are written to ./Data.json
 
+#License
+This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the LICENSE file.
 
 
 
