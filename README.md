@@ -14,7 +14,7 @@ Results are written to ./Data.json
 
 ## Configuration
 
-create .env File with values:
+create .env File at root level with values:
 
 ```sh
 USERNAME=''
