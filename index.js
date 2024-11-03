@@ -84,7 +84,7 @@ var elementsObject = { elements };
 
 var elementsString = JSON.stringify(elementsObject);
 
-fs.writeFile('./Data.json', elementsString, err => {
+fs.writeFile('/usr/src/app/Data.json', elementsString, err => {
     if (err) {
       console.error(err);
     } else {
