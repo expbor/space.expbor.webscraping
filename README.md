@@ -10,7 +10,7 @@ Starting from the start url:
 the next Button is used until the end is reached.
 ![grafik](https://github.com/user-attachments/assets/f46e5da6-3717-47ed-a914-e9829a627336)
 
-Results are written to ./Data.json
+Results are written to Docker Volume
 
 ## Configuration
 
@@ -20,6 +20,21 @@ create .env File at root level with values:
 USERNAME=''
 PASSWORD=''
 STARTURL=''
+```
+
+Path to Result file Data.json is defined in compose.yaml file
+
+```sh
+services:
+  webscraping:
+    build:
+      context: . 
+    env_file:
+     - .env
+    volumes:
+    - ./:/usr/src/app/
+    ports:
+      - 3000:3000
 ```
 
 ## Run the App
