@@ -1,16 +1,26 @@
 import puppeteer from "puppeteer";
 import fs from 'fs';
 
-const username = process.env.username;
-const password = process.env.password;
-const startUrl = process.env.startUrl;
+const username = process.env.USERNAME;
+const password = process.env.PASSWORD;
+const startUrl = process.env.STARTURL;
 
+if (username == ''){
+    console.log('Username missing');
+};
+if (password == ''){
+    console.log('Password missing');
+};
+if (startUrl == ''){
+    console.log('Starturl missing');
+};
 
 const getQuotes = async () => {
     var quotes = [];
 
     const browser = await puppeteer.launch({
-        headless: false,
+        executablePath: '/usr/bin/google-chrome-stable',
+        headless: true,
         defaultViewport: null,
     });
 

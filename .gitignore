@@ -2,3 +2,4 @@ node_modules
 ./Data.json
 .vscode/launch.json
 Data.json
+.env
